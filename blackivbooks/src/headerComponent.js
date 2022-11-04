@@ -4,7 +4,7 @@ import readbooks from './images/readbooks.png'
 class Header extends React.Component {
     render() {
       return (
-        <header className='min-h-screen font-sans bg-red-800'>
+        <header className='min-h-screen font-sans bg-red-600'>
 
             <section className='flex flex-col items-center justify-center md:flex-row md:justify-between py-10'>
 
@@ -49,8 +49,8 @@ class Header extends React.Component {
 
                 <div className='lg:flex justify-center'>
 
-                    <a>
-                        <img src={readbooks} />
+                    <a href>
+                        <img src={readbooks} alt="3D-lady-reading-book" />
                     </a>
 
                 </div>
