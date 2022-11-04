@@ -15,7 +15,7 @@ class Header extends React.Component {
                         <span className='text-white group-hover:text-black'> IV</span> BOOKS
                     </h1>
 
-                    <p>
+                    <div>
                         
                         <figure className="mx-auto max-w-screen-md">
                             <blockquote>
@@ -43,15 +43,13 @@ class Header extends React.Component {
                             Preview every new book to know what they are about.
                         </span>
                     
-                    </p>
+                    </div>
 
                 </div>
 
                 <div className='lg:flex justify-center'>
 
-                    <a href>
                         <img src={readbooks} alt="3D-lady-reading-book" />
-                    </a>
 
                 </div>
 

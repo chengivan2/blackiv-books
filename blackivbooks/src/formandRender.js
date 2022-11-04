@@ -45,7 +45,7 @@ function App() {
           
           <div className='bg-gray-400 hover:shadow-lg hover:shadow-gray-500 shadow-[0_35px_60px_-15px_rgba(1,1,1,1.3)] hover:bg-gray-500 flex flex-col py-5 justify-center rounded-xl align-center'>
 
-            <a target="_blank" href={book.volumeInfo.previewLink}>
+            <a target="_blank" rel="noreferrer" href={book.volumeInfo.previewLink}>
               <div className='flex justify-center align-center'>
                 <img src={book.volumeInfo.imageLinks.thumbnail} alt={book.volumeInfo.title}/>
               </div>
