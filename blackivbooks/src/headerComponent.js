@@ -1,5 +1,5 @@
 import React from 'react';
-import readbooks from './readbooks.png'
+import readbooks from './images/readbooks.png'
 
 class Header extends React.Component {
     render() {
@@ -49,7 +49,9 @@ class Header extends React.Component {
 
                 <div className='lg:flex justify-center'>
 
-                    <img src={readbooks} />
+                    <a>
+                        <img src={readbooks} />
+                    </a>
 
                 </div>
 
