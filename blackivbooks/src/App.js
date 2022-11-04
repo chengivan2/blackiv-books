@@ -24,30 +24,37 @@ function App() {
 
 
   return (
-    <div className="grid justify-center min-w-full">
-      <div>
+    <div className="min-w-full py-15">
+
+      <div className='flex justify-center'>
         <h2 className='font-bold'>Start Typing to view books</h2>
       </div>
-      <form onSubmit={handleSubmit}> {/* Event will fire this method when the form is submitted */}
+
+      <form className="flex flex-col items-center justify-center pb-10" onSubmit={handleSubmit}> {/* Event will fire this method when the form is submitted */}
         <div className="py-5">
           <input type="text" className='bg-blue-300' onChange={handleChange}/> {/* Event will fire this method when the value changes */}
         </div>
 
         <div>
-          <button type="submit" className="rounded-md bg-red-600 hover:bg-red-300 px-4">Submit</button>
+          <button type="submit" className="rounded-md bg-red-600 hover:bg-red-300 px-5 py-4 text-lg">Submit</button>
         </div>
       </form>
 
-      <div className='grid min-w-full'>
-      {result.map(book => (
-        <a target="_blank" href={book.volumeInfo.previewLink}>
-          <img src={book.volumeInfo.imageLinks.thumbnail} alt={book.volumeInfo.title}/>
-          <p className='py-2'>{book.volumeInfo.title}</p>
-        </a>
-      ))}
-      </div>
-    </div>
+      <div className='grid grid-cols-4 gap-4'>
+        {result.map(book => (
+          <div>
 
+            <a target="_blank" href={book.volumeInfo.previewLink}>
+              <img src={book.volumeInfo.imageLinks.thumbnail} alt={book.volumeInfo.title}/>
+              <p className='py-2'>{book.volumeInfo.title}</p>
+            </a>
+
+          </div>
+
+        ))}
+      </div>
+
+    </div>
     
   );
 }
