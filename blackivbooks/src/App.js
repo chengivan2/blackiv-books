@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="min-w-full py-15">
 
-      <div className='flex justify-center'>
+      <div className='flex justify-center pt-5'>
         <h2 className='font-bold'>Start Typing to view books</h2>
       </div>
 
@@ -40,13 +40,15 @@ function App() {
         </div>
       </form>
 
-      <div className='grid grid-cols-4 gap-4'>
+      <div className='grid md:grid-cols-4 gap-6 justify-center px-5 py-5'>
         {result.map(book => (
-          <div>
+          <div className='bg-gray-300 hover:bg-gray-500 flex flex-col py-5 justify-center rounded-xl align-center'>
 
             <a target="_blank" href={book.volumeInfo.previewLink}>
-              <img src={book.volumeInfo.imageLinks.thumbnail} alt={book.volumeInfo.title}/>
-              <p className='py-2'>{book.volumeInfo.title}</p>
+              <div className='flex justify-center align-center'>
+                <img src={book.volumeInfo.imageLinks.thumbnail} alt={book.volumeInfo.title}/>
+              </div>
+              <p className='text-center py-3'>{book.volumeInfo.title}</p>
             </a>
 
           </div>
