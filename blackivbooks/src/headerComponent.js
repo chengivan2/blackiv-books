@@ -4,7 +4,7 @@ import readbooks from './images/readbooks.png'
 class Header extends React.Component {
     render() {
       return (
-        <header className='min-h-screen font-sans px-5 bg-red-600'>
+        <header className='min-h-screen md:flex font-sans px-5 bg-red-600'>
 
             <section className='flex flex-col items-center justify-center px-5 md:flex-row md:justify-between py-10'>
 
