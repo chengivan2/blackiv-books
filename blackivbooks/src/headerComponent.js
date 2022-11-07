@@ -4,9 +4,9 @@ import readbooks from './images/readbooks.png'
 class Header extends React.Component {
     render() {
       return (
-        <header className='min-h-screen font-sans bg-red-600'>
+        <header className='min-h-screen font-sans px-5 bg-red-600'>
 
-            <section className='flex flex-col items-center justify-center md:flex-row md:justify-between py-10'>
+            <section className='flex flex-col items-center justify-center px-5 md:flex-row md:justify-between py-10'>
 
                 <div className='grid space-evenly leading-loose text-center md:pl-10 md:text-left'>
 
@@ -25,21 +25,16 @@ class Header extends React.Component {
                             </blockquote>
 
                             <figcaption className="flex mt-6 space-x-3">
-                                <div className="flex justify-end divide-x-2 divide-gray-500 dark:divide-gray-700">
-                                    <cite className="pr-3 font-medium text-gray-800">- Frank Zappa</cite>
+                                <div className="flex justify-around divide-x-2 divide-gray-500 dark:divide-gray-700">
+                                    <cite className="font-medium text-gray-800">- Frank Zappa</cite>
                                 </div>
                             </figcaption>
                         </figure>
 
                         <br/>
 
-                        <span className='text-lg font-normal tracking-normal'>
+                        <span className='px-5 text-lg font-normal tracking-normal'>
                             Search for your desired books to see how you can get them.
-                        </span>
-
-                        <br/>
-                        
-                        <span className='text-lg font-normal tracking-normal'>
                             Preview every new book to know what they are about.
                         </span>
                     
