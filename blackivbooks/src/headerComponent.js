@@ -15,7 +15,7 @@ class Header extends React.Component {
                         <span className='text-white group-hover:text-black'> IV</span> BOOKS
                     </h1>
 
-                    <div>
+                    <div className="px-5">
                         
                         <figure className="mx-auto max-w-screen-md">
                             <blockquote>
